@@ -25,23 +25,37 @@ Instead, this repo's LSPosed module hooks `ApplicationPackageManager.getApplicat
 | File | Source |
 |---|---|
 | `VRChatQuest1Fix-lsposed-v2.apk` | In this repo (13 KB). SHA-256: `dc12a2075db9d61ddcc3eb1166cf4b876ec753a09a05d455770d011ba3319fdf` |
-| Untouched VRChat APK | **Not redistributed.** Obtain `2026.3.2p2-1903-5de5614b49-Release` (versionCode `1010610`, package `com.vrchat.oculus.quest`) yourself — e.g. via Quest App Version Switcher. Verify SHA-256: `cf4fb0c6f68ac436b1692da0b300d675c4f876701d93f4f842feba66701d9054` |
+| Untouched VRChat APK | **Not redistributed.** Download the newest version yourself with Quest App Version Switcher (see below). Tested build: `2026.3.2p2-1903-5de5614b49-Release` (versionCode `1010610`, package `com.vrchat.oculus.quest`). Verify SHA-256: `cf4fb0c6f68ac436b1692da0b300d675c4f876701d93f4f842feba66701d9054` |
 
 > **Critical:** Use the untouched official APK. Do not edit its manifest, patch it, or re-sign it — Appdome will kill it seconds after launch. The filename alone is not proof; check the SHA-256.
+
+### Getting the VRChat APK with QuestAppVersionSwitcher
+
+VRChat isn't on the Quest 1 store, so grab the newest Quest build directly:
+
+1. Download the latest QuestAppVersionSwitcher APK from [ComputerElite/QuestAppVersionSwitcher releases](https://github.com/ComputerElite/QuestAppVersionSwitcher/releases/latest)
+2. Sideload it onto the headset:
+   ```bat
+   adb install QuestAppVersionSwitcher.apk
+   ```
+3. Open it on the headset (check Unknown Sources) and log in with your Meta account
+4. Find **VRChat**, download the newest version
+5. Copy the downloaded APK to your PC (via `adb pull` from the app's download location, or USB file transfer)
+6. Confirm the SHA-256 matches the tested build above before installing
 
 ## Install
 
 ### 1. Install VRChat (untouched)
 
 ```bat
-adb install -r VRChat-2026.3.2-original-untouched.apk
+adb install -r "name-of-your-vrchat.apk"
 ```
 
-Wait for `Success`. Do not launch it yet. If you hit `INSTALL_FAILED_VERSION_DOWNGRADE`, uninstall first (this wipes local app data):
+(Replace `"name-of-your-vrchat.apk"` with the actual filename of the APK you downloaded.) Wait for `Success`. Do not launch it yet. If you hit `INSTALL_FAILED_VERSION_DOWNGRADE`, uninstall first (this wipes local app data):
 
 ```bat
 adb uninstall com.vrchat.oculus.quest
-adb install VRChat-2026.3.2-original-untouched.apk
+adb install "name-of-your-vrchat.apk"
 ```
 
 ### 2. Install and scope the fix module
