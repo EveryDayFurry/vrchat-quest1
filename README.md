@@ -40,18 +40,17 @@ VRChat isn't on the Quest 1 store, so grab the newest Quest build with QAVS (Que
 
 ## Install
 
-### 1. Install VRChat (untouched)
+### 1. Confirm the untouched VRChat build is installed
+
+If you installed VRChat through QAVS above, skip this step — you're already set.
+
+Only needed if VRChat isn't installed yet, or you have an old/modified build: install the untouched APK (replace with your actual filename; uninstall first with `adb uninstall com.vrchat.oculus.quest` if you hit `INSTALL_FAILED_VERSION_DOWNGRADE`):
 
 ```bat
 adb install -r "name-of-your-vrchat.apk"
 ```
 
-(Replace `"name-of-your-vrchat.apk"` with the actual filename of the APK you downloaded.) Wait for `Success`. Do not launch it yet. If you hit `INSTALL_FAILED_VERSION_DOWNGRADE`, uninstall first (this wipes local app data):
-
-```bat
-adb uninstall com.vrchat.oculus.quest
-adb install "name-of-your-vrchat.apk"
-```
+Do not launch it yet.
 
 ### 2. Install and scope the fix module
 
