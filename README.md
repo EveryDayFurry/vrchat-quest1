@@ -1,6 +1,6 @@
 # VRChat on Quest 1 (Rooted)
 
-Run the current VRChat Quest build (**2026.3.2p2**) on a rooted Meta Quest 1.
+Run the current VRChat Quest build (**2026.3.2p2**) on a rooted Oculus Quest 1.
 
 Tested 2026-09-24: launch, login, and world load all work.
 
@@ -14,7 +14,7 @@ Instead, this repo's LSPosed module hooks `ApplicationPackageManager.getApplicat
 
 ## Prerequisites
 
-- Meta Quest 1, **already rooted** (this guide assumes Magisk via [QuestStack](https://github.com/starseed12345/QuestStack) — rooting itself is out of scope)
+- Oculus Quest 1, **already rooted** (this guide assumes Magisk via [QuestStack](https://github.com/starseed12345/QuestStack) — rooting itself is out of scope)
 - Zygisk enabled in Magisk
 - [LSPosed](https://github.com/LSPosed/LSPosed) (Zygisk build) installed and active
 - ADB on your PC ([platform-tools](https://developer.android.com/tools/releases/platform-tools))
