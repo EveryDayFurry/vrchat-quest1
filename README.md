@@ -60,17 +60,25 @@ Do not launch it yet.
 adb install -r VRChatQuest1Fix-lsposed-v2.apk
 ```
 
-If LSPosed Manager isn't visible on the headset after flashing the module and rebooting, install it manually from the module's bundled APK:
+If LSPosed Manager isn't visible on the headset after flashing the module and rebooting, install it manually from the module's bundled APK — run these in order:
 
 ```bat
 adb shell su -c "cp /data/adb/modules/zygisk_lsposed/manager.apk /sdcard/LSPosedManager.apk"
+```
+```bat
 adb pull /sdcard/LSPosedManager.apk
+```
+```bat
 adb install LSPosedManager.apk
 ```
 
 Then on the headset:
 1. Open LSPosed Manager → Modules → enable **VRChat Quest 1 Fix**
-2. Open the module's scope and tick **VRChat** (`com.vrchat.oculus.quest`) — nothing else
+2. Open the module's scope and tick **VRChat** (`com.vrchat.oculus.quest`) — nothing else. If VRChat doesn't appear in the list, check the **Hide** tab in Modules — it may be filtering VRChat out. Turn it off.
+
+   It should look like this:
+
+   ![LSPosed module scope with VRChat ticked](lsposed-scope.jpg)
 3. **Reboot** the headset (required for the scope to take effect)
 
 ### 3. Launch
