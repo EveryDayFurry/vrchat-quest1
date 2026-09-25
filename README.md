@@ -24,7 +24,7 @@ Instead, this repo's LSPosed module hooks `ApplicationPackageManager.getApplicat
 
 | File | Source |
 |---|---|
-| `VRChatQuest1Fix-lsposed-v2.apk` | In this repo (13 KB) |
+| [`VRChatQuest1Fix-lsposed-v2.apk`](./VRChatQuest1Fix-lsposed-v2.apk) | In this repo (13 KB) — click the filename to download |
 | Untouched VRChat APK | **Not redistributed.** Download the newest version yourself with Quest App Version Switcher (see below). Tested build: `2026.3.2p2-1903-5de5614b49-Release` (versionCode `1010610`, package `com.vrchat.oculus.quest`) |
 
 > **Critical:** Use the untouched official APK. Do not edit its manifest, patch it, or re-sign it — Appdome will kill it seconds after launch.
