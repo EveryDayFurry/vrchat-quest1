@@ -40,6 +40,8 @@ VRChat isn't on the Quest 1 store, so grab the newest Quest build with QAVS (Que
 
 ## Install
 
+> Run each `adb` command one at a time and wait for it to finish. You can also paste a whole block at once — the commands will run in order, one after another.
+
 ### 1. Confirm the untouched VRChat build is installed
 
 If you installed VRChat through QAVS above, skip this step — you're already set.
