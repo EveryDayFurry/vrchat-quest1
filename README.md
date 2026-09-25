@@ -109,7 +109,7 @@ Expected result: VRChat opens, logs in, and loads a world with no driver abort.
 
 - Verified for build `2026.3.2p2` only. Future VRChat updates need re-testing against the same scope.
 - This does not modify VRChat's code, assets, or network traffic — it only changes what the OS reports about supported devices, inside the VRChat process.
-- No claim is made about detectability. Use at your own risk.
+- Avatar and world thumbnails may not load at all
 
 ## License
 
