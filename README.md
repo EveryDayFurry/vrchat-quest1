@@ -4,7 +4,7 @@ Run the current VRChat Quest build (**2026.3.2p2**) on a rooted Oculus Quest 1.
 
 Tested 2026-09-24: launch, login, and world load all work.
 
-## How it works
+# How it works
 
 The Quest 1 runs Android 10 (API 29) with 64-bit userspace — technically compatible with the current VRChat build. The only hard block is the manifest's `com.oculus.supportedDevices` metadata, which declares `quest2|quest3`. The Quest 1 VR driver aborts init when `quest` isn't in that list.
 
